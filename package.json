@@ -17,8 +17,7 @@
     "react-icons": "^4.7.1",
     "react-router-dom": "^6.7.0",
     "react-spinners": "^0.13.8",
-    "react-typed": "^1.2.0",
-    "typewriter-effect": "^2.19.0"
+    "react-typed": "^1.2.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.15",
