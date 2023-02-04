@@ -113,8 +113,6 @@ padding: 0 20px;
  
   }
   .grid img{
-/*    width: 300px; */
-/*     width: 100% */
     padding: 10px;
   }
    
@@ -124,5 +122,5 @@ padding: 0 20px;
   .projects .grid{
     justify-content: center;
     margin-left: 1rem;
-/*     width: 80%; */
+}
 }

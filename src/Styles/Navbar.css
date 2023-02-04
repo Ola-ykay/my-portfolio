@@ -138,13 +138,8 @@ padding: 0px 10px;
 @media screen and (max-width: 420px) {
   .logo{
     margin-right: 10rem;
-/*    z-index: 100;
-    opacity: 1; */
   }
 
-   .nav-menu{
-/*      z-index: 1; */
-   }
   header{
     margin-top: 0;
    
