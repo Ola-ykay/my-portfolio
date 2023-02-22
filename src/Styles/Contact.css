@@ -184,3 +184,9 @@ padding: 20px 0px;
 }
    
  }
+
+@media screen and (max-width: 1024px) {
+   .form {
+    width: 100%;
+  }
+}
