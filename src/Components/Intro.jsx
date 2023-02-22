@@ -28,7 +28,7 @@ const Intro = () => {
             A Software Engineer passionate about creating interactive applications and experiences on the web.
           </p>
           <div className='home-links'>
-          <a href="/my-CV.pdf" download="">Resumé</a>
+          <a href="/Olayinka_Fagbemi.pdf" download="">Resumé</a>
 
              
        <a href="https://www.linkedin.com/in/fagbemiolayinka/" target="_blank" rel="noreferrer">
