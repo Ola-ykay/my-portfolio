@@ -18,6 +18,15 @@
   line-height: 25px; 
 }
 
+.line{
+ width: 3rem;
+  background: #007FFF;
+  height: 2px;
+  display: inline-block;
+  text-align: center;
+  margin-right: 1rem;
+}                                    
+
 .contact-sec h2{
    font-size: 1.5rem;
  color: #002147;
