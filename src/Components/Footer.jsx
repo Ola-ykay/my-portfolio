@@ -3,9 +3,9 @@ import '../Styles/Footer.css'
 
  const Footer = () => {
   return (
-  <footer>
+  <div className="footer">
    <p>&copy; 2023 - <span>Olayinka Fagbemi. </span> All rights reserved.</p>
-  </footer>
+  </div>
   );
 }
 
