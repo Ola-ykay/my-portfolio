@@ -16,8 +16,7 @@ display: flex;
 }
 
 .logo{
-/*   padding:  10px 15px; */
-/*   margin-left: 5rem; */
+
   margin-right: 43rem;
 }
 
@@ -107,8 +106,6 @@ padding: 0px 10px;
   }
 
      .nav-item{
-/*     margin-top: 4em; */
-/*     font-size: .8rem;  #019fb6*/
        padding: 10px 0;
   }
 
@@ -138,21 +135,12 @@ padding: 0px 10px;
 @media screen and (max-width: 420px) {
   .logo{
     margin-right: 10rem;
-/*    z-index: 100;
-    opacity: 1; */
   }
 
-   .nav-menu{
-/*      z-index: 1; */
-   }
   header{
     margin-top: 0;
    
   }
 }
 
-/* @media (min-width: 1200px) {
-  .logo{
-     margin-left: 18rem;
-  }
-} */
+

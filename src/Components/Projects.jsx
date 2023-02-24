@@ -33,6 +33,20 @@ import { motion } from "framer-motion";
         </a>
       </motion.div>
 
+         <motion.div className='project-cont' 
+        initial={{y:80}} 
+             whileInView={{y:0}} 
+             transition={{ staggerChildren: 0.5,
+        type: "spring",
+        bounce: 0.6,}}>
+      <img src='/quote.png' alt='' />
+        <h3>Random Quote Generator</h3>
+      <p>A random quote generator is an application developed with Vue.js that selects and displays a random quote fetched from an API to the user.</p>
+        <a href='https://ykay-quote-app.vercel.app/' className='project-link'> 
+          <FiExternalLink /> 
+        </a>
+      </motion.div>
+
 
          <motion.div className='project-cont' 
            initial={{y:80}} 
@@ -42,7 +56,7 @@ import { motion } from "framer-motion";
         bounce: 0.6,}} >
       <img src='/counter.png' alt=''/>
            <h3>Counter App</h3>
-      <p> A counter app is an application which helps to gather  and keep track of data or number and perform different functions like increment, decrement, reset and set value. </p>
+      <p> A counter app is an application which helps to gather and keep track of data or number and perform different functions like increment, decrement, reset and set value. </p>
            <a href='https://altschool-exam-project-ruby.vercel.app/' className='project-link'>
             <FiExternalLink /> 
            </a>

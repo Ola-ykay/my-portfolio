@@ -12,14 +12,17 @@ import BeatLoader from "react-spinners/BeatLoader";
 import {useState, useEffect} from 'react'
 
 const override = {
+  width: '70px',
   margin: "0 auto",
- background: '',
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+ transform: 'translateX(-50%)',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
   border:'1px solid #002147',
   borderRadius: '10px',
-position: 'absolute',
-  top: '40%',
-  left: '43%',
-
 };
 
 function App() {
