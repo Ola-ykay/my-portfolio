@@ -1,5 +1,20 @@
+.contact.dark {
+    background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.4),
+      rgba(38, 38, 38, 0.9)
+    ),
+    url("/black-image.jpeg");
+  color: #ffffff;
+}
+.contact.dark .contact-sec h2,
+.contact.dark .form-details .contact-links a{
+  color: #007FFF;
+}
+/******* light mode *****/
 .contact{
    margin-top: 1rem;
+  margin-bottom: -8rem;
    background: linear-gradient(
       to left,
       rgba(255, 255, 255, 0.4),

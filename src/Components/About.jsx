@@ -3,10 +3,10 @@ import { motion } from "framer-motion";
 import '../Styles/About.css';
 
 
- const About = () => {
+ const About = ({ theme }) => {
   return (
 
-    <section className="about" id="about">
+    <section className={`about ${theme === 'dark' ? 'dark' : ''}`} id="about">
     <div className='about-sec'>
        <motion.div className='line'
           initial={{x:-50}}

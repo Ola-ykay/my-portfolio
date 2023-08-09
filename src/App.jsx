@@ -1,13 +1,12 @@
 import React from 'react'
 import './App.css'
 import Navbar from './Components/Navbar'
-import Intro from './Components/Intro'
+import Hero from './Components/Hero'
 import About from './Components/About'
 import Skills from './Components/Skills'
 import Projects from './Components/Projects'
 import Contact from './Components/Contact'
 import Footer from './Components/Footer'
-
 import BeatLoader from "react-spinners/BeatLoader";
 import {useState, useEffect} from 'react'
 
@@ -26,6 +25,12 @@ const override = {
 };
 
 function App() {
+const [theme, setTheme] = useState('light'); // 'light' or 'dark'
+
+  const toggleTheme = () => {
+    setTheme(prevTheme => (prevTheme === 'light' ? 'dark' : 'light'));
+  };
+
   const [loading, setLoading] = useState(false)
   useEffect(()=>{
 setLoading(true)
@@ -34,6 +39,8 @@ setLoading(true)
     },5000)
     
   },[])
+
+  
   return (
         <div>
           {
@@ -44,19 +51,17 @@ setLoading(true)
         loading={loading}
         size={15}
       /> : 
-  <div className='container'>
-   <Navbar />
-      <Intro />
-      <About />
-      <Skills />
-      <Projects />
-      <Contact />
+     <div className={`container ${theme}`}>
+      <Navbar theme={theme} toggleTheme={toggleTheme} />
+      <Hero theme={theme}/>
+      <About theme={theme}/>
+      <Skills theme={theme}/>
+      <Projects theme={theme}/>
+      <Contact theme={theme} />
       <Footer />
           </div>
           }
-    
-    
-        </div>
+    </div>
    
   );
 };

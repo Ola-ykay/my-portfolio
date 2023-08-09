@@ -1,12 +1,12 @@
 import React from 'react';
 import { FaTwitter, FaGithub, FaLinkedin } from "react-icons/fa";
 import Typed from 'react-typed';
-import '../Styles/Intro.css';
+import '../Styles/Hero.css';
 import { motion } from 'framer-motion';
 
-const Intro = () => {
+const Intro = ({ theme }) => {
   return (
-    <section className='home-sec' id='home'>
+    <section className={`home-sec ${theme === 'dark' ? 'dark' : ''}`} id='home'>
       
       <motion.div className='home-details' initial={{opacity:0, x:-150}}
           whileInView={{opacity : 1 , x:0}}
@@ -27,7 +27,7 @@ const Intro = () => {
           <p>
             A Software Engineer passionate about creating interactive applications and experiences on the web.
           </p>
-          <div className='home-links'>
+          <div className={`home-links ${theme === 'dark' ? 'dark' : ''}`}>
           <a href="/Olayinka_Fagbemi.pdf" download="">Resumé</a>
 
              

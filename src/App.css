@@ -8,10 +8,17 @@
   box-sizing: border-box;
 
 }
-
 .container{
-
-     font-family: 'Ubuntu', sans-serif;
-    background: #E1EBEE77;
+font-family: 'Ubuntu', sans-serif;
 overflow-x: hidden; 
 }
+.container.dark {
+  background-color: #000000;
+}
+.dark-mode-toggle{
+  position: relative;
+  right: 0;
+  left: 3%;
+}
+
+

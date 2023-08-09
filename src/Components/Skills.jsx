@@ -5,11 +5,11 @@ import '../Styles/Skills.css';
 import { motion } from "framer-motion";
 
 
- const Skills = () => {
+ const Skills = ({ theme }) => {
    
   return (
     <div>
-      <section className='skills'  id='skills'>
+      <section className={`skills ${theme === 'dark' ? 'dark' : ''}`} id="skills">
         <div className='skills-sec'>
        <motion.div className='line' initial={{x:-50}}
             whileInView={{x:0}}

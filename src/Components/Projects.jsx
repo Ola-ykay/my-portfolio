@@ -3,9 +3,9 @@ import { FiExternalLink } from 'react-icons/fi';
 import '../Styles/Projects.css';
 import { motion } from "framer-motion";
 
- const Projects = () => {
+ const Projects = ({ theme }) => {
   return (
-    <section className='projects' id='projects'>
+    <section className={`projects ${theme === 'dark' ? 'dark' : ''}`} id="projects">
       <div className='projects-sec'>
        <motion.div className='line' initial={{x:-50}}
             whileInView={{x:0}}
@@ -19,6 +19,34 @@ import { motion } from "framer-motion";
     </div>
 
       <div className="grid">
+<motion.div className='project-cont' 
+        initial={{y:80}} 
+             whileInView={{y:0}} 
+             transition={{ staggerChildren: 0.5,
+        type: "spring",
+        bounce: 0.6,}}>
+      <img src='/trimly.png' alt='' />
+        <h3>Trimly</h3>
+      <p>A URL shortener web application developed with React TypeScript. Utilized Firebase for authentication and transformed Figma's design into a seamless, secure, and user-friendly platform.</p>
+        <a href='https://trimly.vercel.app/' className='project-link'> 
+          <FiExternalLink /> 
+        </a>
+      </motion.div>
+        
+ <motion.div className='project-cont' 
+        initial={{y:80}} 
+             whileInView={{y:0}} 
+             transition={{ staggerChildren: 0.5,
+        type: "spring",
+        bounce: 0.6,}}>
+      <img src='/wastecycle.png' alt='' />
+        <h3>WasteCycle</h3>
+      <p>A user-friendly website that was developed with Reactjs. seamlessly translated Figma design into interactive reality. </p>
+        <a href='https://waste-cycle.vercel.app/' className='project-link'> 
+          <FiExternalLink /> 
+        </a>
+      </motion.div>
+        
       <motion.div className='project-cont' 
         initial={{y:80}} 
              whileInView={{y:0}} 

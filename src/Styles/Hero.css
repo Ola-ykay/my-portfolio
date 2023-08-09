@@ -1,7 +1,39 @@
+.home-sec.dark {
+    background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.4),
+      rgba(38, 38, 38, 0.9)
+    ),
+    url("/black-image.jpeg");
+  color: #ffffff;
+}
+
+.home-sec.dark .home-details h1,
+.home-sec.dark .home-details p {
+  color: #ffffff;
+}
+.home-links a.dark {
+  border: 2px solid #ffffff;
+  color: #ffffff;
+}
+.home-sec.dark .home-links a{
+   color:#007FFF;
+   border:2px solid #007FFF;
+}
+
+.home-sec.dark .home-links a:hover {
+  background: #333333;
+  color:#007FFF;
+  border: none;
+  transform: translateY(-5px);
+}
+
+/******** light mode *******/
+
 .home-sec{
   margin-top: .9rem;
   padding:0 90px;
-   background: linear-gradient(
+   background-image: linear-gradient(
       to left,
       rgba(255, 255, 255, 0.4),
       rgba(238, 238, 238, 0.9)
@@ -11,8 +43,6 @@
   background-size: cover;
   height: fit-content;
   display: flex;
-/*   gap: 8rem; */
-/*   align-items: center; */
   justify-content: space-evenly;
   height: 550px;
  

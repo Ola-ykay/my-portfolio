@@ -8,7 +8,7 @@ import { GrCheckmark } from 'react-icons/gr';
 import '../Styles/Contact.css';
 import { motion } from 'framer-motion';
 
-const Contact = () => {
+const Contact = ({ theme }) => {
  const [submit, setSubmit] = useState(false);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -53,7 +53,7 @@ const Contact = () => {
   }
       
   return (
-    <section className='contact' id='contact'>
+    <section className={`contact ${theme === 'dark' ? 'dark' : ''}`} id='contact'>
      <div className='contact-sec'>
        <motion.div className='line' initial={{x:-50}}
             whileInView={{x:0}}

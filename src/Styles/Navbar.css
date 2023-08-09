@@ -1,13 +1,27 @@
+.navbar.dark {
+  background-color: #0d0d0d;
+  color: #ffffff;
+}
+.navbar.dark .nav-item a{
+  color: #ffffff;
+}
+.navbar.dark header{
+   box-shadow: rgba(255, 255, 255, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+
+
 header{
 display: flex;
   align-items: center;
-  justify-content: right;
+  justify-content: center;
   margin-top: .4rem;
   width: 100%;
   height: 60px;
   border-radius: 30px;
 
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  
   background: #fff;
   z-index: 1;
   opacity: 1;
@@ -16,8 +30,11 @@ display: flex;
 }
 
 .logo{
+   margin-right: 40rem;
+/* position: relative;
+  top: 2%;
+  right: 36%; */
 
-  margin-right: 43rem;
 }
 
  a{
@@ -30,12 +47,11 @@ display: flex;
 .nav-menu{
   display: flex;
   list-style-type: none;
-  
- 
-}
+  }
 
 .nav-item{
-  margin-right: 5rem;
+/*   margin-right: 5rem; */
+margin-left: 4rem; 
 }
 
 .nav-item a{
@@ -66,13 +82,31 @@ display: flex;
   font-weight: 800;
 }
 
+.dark-mode {
+  position: absolute;
+  /* top: 50%; */
+  right: 30px;
+  /* transform: translateY(-50%); */
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.dark-mode button {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  outline: none;
+}
+
 /* Navbar responsiveness */
   @media screen and (max-width: 768px) {
 header{
   position: fixed;
   top: 1%;
   margin-bottom: 2rem;
-/*    height: 60px; */
   z-index: 2;
 }
     
@@ -94,12 +128,11 @@ padding: 0px 10px;
    }
 .nav-mobile{
   display: block;
-  padding: 0 50px;
+  
+  margin: auto 1rem;
   color: #2D68C4;
   cursor: pointer;
-  z-index: 100;
-  
-  
+  z-index: 100; 
 }
  .nav-menu.click{
     right: 1px;
@@ -107,13 +140,14 @@ padding: 0px 10px;
 
      .nav-item{
        padding: 10px 0;
+       width: 200px;
   }
 
     .nav-item a{
-      color: #fff;
+       color: var(--text-color);
       font-size: 1.3rem;
-    margin-left: 3.5rem;
-      border-image: repeating-linear-gradient(135deg,	#fff 0 10px, #fff 0 30px) 15;
+    margin: 0 auto;
+     border-image: repeating-linear-gradient(135deg,	#fff 0 10px, #fff 0 30px) 15;
     }
 
     .nav-item:first-child {
@@ -121,20 +155,26 @@ padding: 0px 10px;
   }
 
     .logo{
-      margin-right: 17rem;
+     right: 0;
+      left: -3%;
+    }
+    
+    .dark-mode{
+     right: 80px;
+      
     }
       
   }
 
 @media screen and (max-width: 1000px){
   .logo{
-    margin-right: 20rem;
+    margin-right: 17rem;
   }
 }
 
 @media screen and (max-width: 420px) {
   .logo{
-    margin-right: 10rem;
+    margin-right: 12rem;
   }
 
   header{
