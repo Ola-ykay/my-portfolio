@@ -144,7 +144,7 @@ padding: 0px 10px;
   }
 
     .nav-item a{
-       color: var(--text-color);
+       color: #ffffff;
       font-size: 1.3rem;
     margin: 0 auto;
      border-image: repeating-linear-gradient(135deg,	#fff 0 10px, #fff 0 30px) 15;

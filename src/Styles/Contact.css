@@ -11,6 +11,9 @@
 .contact.dark .form-details .contact-links a{
   color: #007FFF;
 }
+.contact.dark small{
+   color: #ffffff;
+}
 /******* light mode *****/
 .contact{
    margin-top: 1rem;

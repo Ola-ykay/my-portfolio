@@ -6,11 +6,12 @@
   background: #000000;
 box-shadow: rgba(250, 250, 250, 0.1) 0px 3px 8px;
 }
-.skills.dark p {
+.skills.dark p, .skills.dark small {
  color: #ffffff; 
 }
+
 .skills.dark .skill-logo{
-  color: #800022;
+  color: #fff;
 }
 
 .skills.dark .skills-sec h2{

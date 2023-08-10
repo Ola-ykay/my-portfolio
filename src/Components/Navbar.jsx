@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../Styles/Navbar.css';
-import { FaBars, FaTimes, FaSun } from 'react-icons/fa';
-import { BsMoon } from 'react-icons/bs';
+import { FaBars, FaTimes } from 'react-icons/fa';
+
 import DarkMode from '../Components/DarkMode';
 
 const Navbar = ({theme, toggleTheme}) => {
