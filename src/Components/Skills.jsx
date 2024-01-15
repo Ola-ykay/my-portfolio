@@ -1,6 +1,7 @@
 import React from "react";
 import { FaHtml5, FaCss3Alt, FaVuejs, FaReact, FaGitAlt } from "react-icons/fa";
-import { TbBrandJavascript } from 'react-icons/tb';
+import { TbBrandJavascript, TbBrandNextjs } from 'react-icons/tb';
+import { SiTailwindcss } from "react-icons/si";
 import '../Styles/Skills.css';
 import { motion } from "framer-motion";
 
@@ -74,6 +75,22 @@ import { motion } from "framer-motion";
         <FaVuejs  size='4.2rem'/>
             <p>VUE</p>
         </motion.div>
+
+          <motion.div className='skill-logo' initial={{ opacity: 0, scale: 0.2 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: false }}
+            transition={{ duration: 1, ease: "easeOut" }}>
+          <TbBrandNextjs  size='4.2rem'/>
+              <p>NEXT</p>
+          </motion.div>
+
+          <motion.div className='skill-logo' initial={{ opacity: 0, scale: 0.2 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: false }}
+            transition={{ duration: 1, ease: "easeOut" }}>
+          <SiTailwindcss  size='4.2rem'/>
+              <p>TAILWIND</p>
+          </motion.div>
  </div>
       </section>
     </div>

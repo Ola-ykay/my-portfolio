@@ -25,13 +25,27 @@ import { motion } from "framer-motion";
              transition={{ staggerChildren: 0.5,
         type: "spring",
         bounce: 0.6,}}>
-      <img src='/trimly.png' alt='' />
-        <h3>Trimly</h3>
-      <p>A URL shortener web application developed with React TypeScript. Utilized Firebase for authentication and transformed Figma's design into a seamless, secure, and user-friendly platform.</p>
-        <a href='https://trimly.vercel.app/' className='project-link'> 
+      <img src='/pizzon.png' alt='' />
+        <h3>Pizzon</h3>
+      <p>Pizzon, a sleek pizza-ordering web app crafted with Next.js and Tailwind CSS, delivers an intuitive and responsive experience. Enjoy real-time customization, speedy checkout, and order tracking. With a stylish design, multiple payment options, and order history features, Pizzon ensures a seamless and delightful pizza-ordering journey.</p>
+        <a href='https://pizza-ordering-app-ola-ykay.vercel.app/' className='project-link'> 
           <FiExternalLink /> 
         </a>
       </motion.div>
+
+        <motion.div className='project-cont' 
+          initial={{y:80}} 
+        whileInView={{y:0}} 
+        transition={{ staggerChildren: 0.5,
+          type: "spring",
+          bounce: 0.6,}}>
+        <img src='/trimly.png' alt='' />
+          <h3>Trimly</h3>
+        <p>A URL shortener web application developed with React TypeScript. Utilized Firebase for authentication and transformed Figma's design into a seamless, secure, and user-friendly platform.</p>
+          <a href='https://trimly.vercel.app/' className='project-link'> 
+            <FiExternalLink /> 
+          </a>
+        </motion.div>
         
  <motion.div className='project-cont' 
         initial={{y:80}} 
